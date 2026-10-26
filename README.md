@@ -1,16 +1,24 @@
-# PRAVAAH
+PRAVAAH
 
-**An AI-Powered Environmental Monitoring and Disaster Risk Prevention Network**
+AI-Powered Environmental Monitoring and Disaster Risk Prevention
 
-PRAVAAH is a prototype concept for environmental-risk monitoring and disaster decision support. The presentation describes a workflow that analyzes environmental signals, detects risk precursors and monitoring blind zones, explores cascading impacts, simulates flood spread, compares response strategies, and stores disaster memory.
+Overview
 
-## Current prototype status
+PRAVAAH is an environmental monitoring and disaster decision-support prototype designed to identify potential environmental risks, analyze uncertainty, simulate possible disaster scenarios, and support better emergency-response planning.
 
-The project presentation states that the current prototype uses **simulated readings** because controlled hazard testing and suitable real-world data were difficult to obtain. It should not be described as a deployed live-sensor system or as a validated real-world forecasting service.
+The project focuses on transforming environmental readings into actionable insights for disaster preparedness and resource prioritization.
 
-## Technology stack
+Key Features
 
-The presentation lists:
+- Environmental Monitoring: Analyzes rainfall, soil moisture, river levels, temperature, and humidity.
+- Risk Analysis: Identifies potential risk trends and early warning signals.
+- Uncertainty Awareness: Highlights potential sensor blind zones and limitations in available data.
+- Disaster Simulation: Explores possible flood propagation and cascading impacts.
+- Resource Prioritization: Supports comparison of response strategies and vulnerable locations.
+- Disaster Memory: Supports recording information for future analysis and learning.
+
+Technology Stack
+
 - Python
 - Streamlit
 - Pandas and NumPy
@@ -18,59 +26,49 @@ The presentation lists:
 - NetworkX
 - Folium
 - Plotly
-- JSON / SQLite-ready architecture for disaster memory
 
-## Repository structure
+Project Structure
 
-The repository currently shows these existing items:
-- `app.py`
-- `data/`
-- `models/`
-- `simulation/`
-- `utils/`
+PRAVAAH/
+├── app.py
+├── data/
+├── models/
+├── simulation/
+└── utils/
 
-Additional submission-support files in this package:
-- `TECHNICAL_DESIGN.md` — high-level design based on the project presentation
-- `requirements.txt` — package list inferred from the presentation; verify against imports in `app.py`
-- `data/sample_environmental_readings.csv` — illustrative synthetic data, not measured field data
-- `tests/test_sample_data.py` — basic checks for the included sample CSV
-- `LICENSE` — MIT License; keep this only if the team chooses to release its code under MIT
+Installation and Setup
 
-## Setup
+1. Install Python and ensure it is compatible with the project.
+2. Install the required dependencies:
 
-Use Python 3.10 or later if compatible with the code in this repository.
+pip install -r requirements.txt
 
-1. Create and activate a virtual environment.
-2. Install dependencies:
+3. Start the Streamlit application:
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+streamlit run app.py
 
-3. Run the application from the repository root:
+The dependency list should be verified against the actual source code.
 
-   ```bash
-   streamlit run app.py
-   ```
+Current Prototype Status
 
-If the app fails because a package is missing or a version is incompatible, compare `requirements.txt` with the actual imports and runtime needs in `app.py` and the project folders.
+The current prototype uses simulated environmental readings. Live sensor integration, historical-data validation, and real-world deployment require further development and testing.
 
-## Sample data
+PRAVAAH is a prototype and must not be treated as a replacement for official disaster alerts or emergency services.
 
-The CSV in `data/` contains **synthetic example readings only**. It is included to document the expected general shape of environmental input data. Confirm that column names and units match the actual app before using it in the prototype.
+Future Scope
 
-## Limitations and responsible use
+- Integration with real-time environmental sensors
+- Testing against historical weather and disaster datasets
+- Improved multi-hazard risk analysis
+- District-level disaster decision support
+- Further validation with disaster-management stakeholders
 
-- Sample values are synthetic and are not a source of real-time warnings.
-- Outputs require testing and validation before any operational use.
-- Human authorities must verify alerts and make emergency decisions.
-- Sensor failure, incomplete coverage, communication outages, changing road access, false alarms, and limited historical data are known risks described in the project presentation.
+Intended Impact
 
-## References
+PRAVAAH aims to support environmental sustainability, disaster preparedness, and safer communities by improving risk awareness and helping decision-makers compare response options.
 
-- National Disaster Management Authority: https://ndma.gov.in/
-- India Meteorological Department: https://mausam.imd.gov.in/
-- Central Pollution Control Board: https://cpcb.nic.in/
-- ISRO Bhuvan: https://bhuvan.nrsc.gov.in/
-- Scikit-learn: https://scikit-learn.org/
-- NetworkX: https://networkx.org/
+Relevant Sustainable Development Goals
+
+- SDG 9: Industry, Innovation and Infrastructure
+- SDG 11: Sustainable Cities and Communities
+- SDG 13: Climate Action
