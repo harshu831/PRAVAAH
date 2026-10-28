@@ -1,0 +1,44 @@
+[
+    {
+        "rainfall": 72.66,
+        "river_level": 7.66,
+        "soil_moisture": 61.0,
+        "risk_score": 70.74,
+        "risk_state": "Critical",
+        "cascade_severity": 20.0,
+        "system_mode": "Degraded",
+        "confidence": 56.8,
+        "blind_zone": false,
+        "best_strategy": "Evacuate 30 Min Earlier",
+        "event_id": "20260904212544780780",
+        "timestamp": "2026-09-04T21:25:44.780817"
+    },
+    {
+        "rainfall": 79.41,
+        "river_level": 9.54,
+        "soil_moisture": 69.0,
+        "risk_score": 82.68,
+        "risk_state": "Hazard",
+        "cascade_severity": 20.0,
+        "system_mode": "Emergency",
+        "confidence": 76.9,
+        "blind_zone": false,
+        "best_strategy": "Evacuate 30 Min Earlier",
+        "event_id": "20260904213253187006",
+        "timestamp": "2026-09-04T21:32:53.187038"
+    },
+    {
+        "rainfall": 95.7,
+        "river_level": 10,
+        "soil_moisture": 77.0,
+        "risk_score": 91.81,
+        "risk_state": "Hazard",
+        "cascade_severity": 20.0,
+        "system_mode": "Emergency",
+        "confidence": 82.3,
+        "blind_zone": false,
+        "best_strategy": "Evacuate 30 Min Earlier",
+        "event_id": "20260904213836440354",
+        "timestamp": "2026-09-04T21:38:36.440387"
+    }
+]
